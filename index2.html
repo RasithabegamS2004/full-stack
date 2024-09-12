@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="download1.png" alt="download1" onclick="openLightbox('download1.png')">
+            <div class="overlay">Photo 1</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image.png" alt="Photo 2" onclick="openLightbox('image.png')">
+            <div class="overlay">Photo 2</div>
+        </div>
+        <div class="gallery-item">
+            <img src="nature1.png" alt="Photo 3" onclick="openLightbox('nature1.png')">
+            <div class="overlay">Photo 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="nature2.png" alt="Photo 4" onclick="openLightbox('nature2.png')">
+            <div class="overlay">Photo 4</div>
+        </div>
+        <div class="gallery-item">
+            <img src="nature3.png" alt="Photo 5" onclick="openLightbox('nature3.png')">
+            <div class="overlay">Photo 5</div>
+        </div>
+        <div class="gallery-item">
+            <img src="nature4.png" alt="Photo 6" onclick="openLightbox('nature4.png')">
+            <div class="overlay">Photo 6</div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
